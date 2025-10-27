@@ -115,7 +115,7 @@ const Index = () => {
       <nav className="border-b border-border bg-white sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-foreground">Equine Elegance</h1>
+            <h1 className="text-2xl font-bold text-foreground">Phalimea</h1>
             
             <div className="hidden md:flex items-center gap-8">
               <button 
@@ -205,16 +205,22 @@ const Index = () => {
       </nav>
 
       {activeSection === "home" && (
-        <section className="py-20 bg-muted">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-5xl font-bold mb-6">Налобные ремни премиум-класса</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Качественная амуниция для лошадей от ведущих производителей. 
-              Элегантность и комфорт в каждой детали.
-            </p>
-            <Button size="lg" onClick={() => setActiveSection("catalog")}>
-              Смотреть каталог
-            </Button>
+        <section className="py-32 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col items-center justify-center text-center space-y-8">
+              <div className="w-32 h-32 mb-4">
+                <svg viewBox="0 0 200 200" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M100 40C90 40 85 50 80 60C75 70 70 80 65 85C60 90 50 95 50 105C50 115 55 120 65 125C75 130 85 130 95 130C100 130 105 125 110 120C115 115 120 110 130 105C140 100 150 95 155 85C160 75 160 65 155 55C150 45 140 40 130 40C120 40 110 45 100 50C95 45 90 40 100 40Z" stroke="#5BA9A1" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h1 className="text-7xl font-bold tracking-tight text-foreground">PHALIMEA</h1>
+              <p className="text-xl text-muted-foreground max-w-md">
+                ВЫБЕРИ КРАСОТУ И УДОБСТВО
+              </p>
+              <Button size="lg" onClick={() => setActiveSection("catalog")} className="mt-8">
+                Смотреть каталог
+              </Button>
+            </div>
           </div>
         </section>
       )}
@@ -334,7 +340,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">О нас</h2>
             <div className="prose prose-lg mx-auto">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Equine Elegance — специализированный магазин амуниции премиум-класса для лошадей. 
+                Phalimea — специализированный магазин амуниции премиум-класса для лошадей. 
                 Мы работаем с 2018 года и предлагаем только качественные налобные ремни от проверенных производителей.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mt-4">
@@ -412,7 +418,7 @@ const Index = () => {
                   <Icon name="Mail" size={24} className="text-primary flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@equine-elegance.ru</p>
+                    <p className="text-muted-foreground">info@phalimea.ru</p>
                   </div>
                 </div>
               </Card>
@@ -433,7 +439,7 @@ const Index = () => {
 
       <footer className="border-t border-border py-8 mt-20">
         <div className="container mx-auto px-6 text-center text-muted-foreground">
-          <p>© 2024 Equine Elegance. Все права защищены.</p>
+          <p>© 2024 Phalimea. Все права защищены.</p>
         </div>
       </footer>
     </div>
